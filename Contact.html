@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" />
+    <link rel="stylesheet" href="main.css">
+    <title>Vishneet Kaur</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <h2 style="text-align: center;">Contact</h2>
+            </div>
+            <form id="contact-form" action="https://httpbin.org/post" method="POST">
+                <div class="row">
+                    <div class="col-6 ">
+                        <div class="form-group">
+                            <label for="">Enter Name</label>
+                            <input type="text" name="name" placeholder="Enter your Name" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="">Email Address</label>
+                            <input type="email" name="email" placeholder="name@example.com" class="form-control" required/>
+                        </div>
+                    </div>
+                </div>
+               
+                        <div class="form-group">
+                            <label for="">Enter Address</label>
+                            <textarea name="address" rows="6" class="form-control" placeholder="Address" required></textarea>
+                        </div>
+                  
+                    
+                        <div class="form-group">
+                            <label for="">City</label>
+                            <input name="city" type="text" placeholder="Ex. Toronto" class="form-control" list="cities" required/>
+                            <datalist id="cities">
+                                <option value="Toronto">
+                                <option value="Montreal">
+                                <option value="Vancouver">
+                                <option value="Ottawa">
+                                <option value="Calgary">
+                                <option value ="Quebec"> 
+                              </datalist>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Postal Code</label>
+                            <input name="postalcode" type="text" placeholder="M1A 999" class="form-control" required/>
+                        </div>
+                    
+                
+               
+                        <div class="form-group mb-1">
+                            <label for="" class="mr-2 mb-75 font-size-sm">Type of message ?</label>
+                            <div class="form-radio-group">
+                                <div class="mr-2">
+                                    <input type="radio" name="type" id="type-1" value="question" checked required>
+                                    <label for="type-1">Question</label>
+                                </div>
+                                <div class="mr-2">
+                                    <input type="radio" name="type" id="type-2" value="comment" required>
+                                    <label for="type-2">Comment</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="type" id="type-3" value="hiring" required>
+                                    <label for="type-3">Hiring</label>
+                                </div>
+                        
+                    </div>
+                    <div style="display: none;" id="rate-container">
+                        <div class="form-group">
+                            <label for="">Hourly Rate</label>
+                            <input name="rate" type="number" placeholder="99" class="form-control" min="0" id="rate-input"/>
+                        </div>
+                    </div>
+                </div>
+                
+                        <div class="form-group">
+                            <label for="">Enter Message</label>
+                            <textarea name="message" rows="5" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                   
+                
+                    <button type="submit" style="margin-left: 210px;">
+                        <ion-icon name="paper-plane"></ion-icon>
+                        <span>Send Message</span>
+                    </button>
+                
+                <br>
+                <br>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    
+    <script src="form.js"></script>
+</body>
+</html>
